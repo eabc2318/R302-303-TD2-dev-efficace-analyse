@@ -14,5 +14,30 @@ public class Main {
         DoublyList dList2 = new DoublyList();
         dList2.addLast(10);
         System.out.println(dList1.equals(dList2));
+
+        //linked
+        MyLinkedList highScores = new MyLinkedList<>();
+        highScores.add("joueur1 - 1000");
+        highScores.add("joueur2 - 800");
+        System.out.println(highScores.get(0));
+
+        //générique
+        MyLinkedList highScores = new MyLinkedList<>();
+        highScores.add("joueur1 - 1000");
+        highScores.add("joueur2 - 800");
+        System.out.println("minkedlist : " + highScores.get(0));
+
+        //circulaire
+        CircularList cList = new CircularList();
+        cList.addFirst(5);
+        cList.addFirst(10);
+        System.out.println("circularlist  : " + cList.countNodes());
+
+        //sentinelles
+        DoublyListSentinel dls = new DoublyListSentinel();
+        dls.addLast(10); 
+        dls.addLast(20); 
+        dls.addLast(30);
+        System.out.println("doublylistsentine : " + dls.findMiddle());
     }
 }
